@@ -12,10 +12,13 @@ CRITERIOS = [
 ]
 
 # Dados fictícios simples
-demo = [
+= [
     {"Aluno": "Beatriz Vitoria", **{c: v for c, v in zip(CRITERIOS, [3, 4, 3, 2, 3, 2, 3, 2, 3, 2])}},
     {"Aluno": "Ana Cecilia",     **{c: v for c, v in zip(CRITERIOS, [2, 3, 2, 1, 2, 2, 2, 1, 2, 1])}},
     {"Aluno": "Francisco Neto",  **{c: v for c, v in zip(CRITERIOS, [4, 4, 4, 3, 4, 3, 4, 3, 4, 3])}},
+    {"Aluno": "caike robeto", **{c: v for c, v in zip(CRITERIOS, [3, 4, 3, 2, 3, 2, 3, 2, 3, 2])}},
+    {"Aluno": "kaliu",     **{c: v for c, v in zip(CRITERIOS, [2, 3, 2, 1, 2, 2, 2, 1, 2, 1])}},
+    {"Aluno": "duda",  **{c: v for c, v in zip(CRITERIOS, [4, 4, 4, 3, 4, 3, 4, 3, 4, 3])}},
 ]
 df = pd.DataFrame(demo)
 df["Média Geral"] = df[CRITERIOS].mean(axis=1).round(2)
